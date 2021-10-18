@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+    <!-- https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do-->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -11,7 +12,7 @@
 
     <title>Gil's Portfolio</title>
 
-    <!--google fonts (Monserrat)-->
+    <!-- monserrat font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,253 +22,633 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- custom -->
-    <link rel="stylesheet" href="css/custom-style.css">
-    <!-- material icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/details-style.css">
 </head>
 
+<body data-spy="scroll" class="body">
+    <section id="themis" class="light">
+        <div class="row">
+            <div class="col-xl-8 col-lg-12 content">
+                <h3 class="border_title">Projeto THEMIS</h3>
+                <h5 class=> Dissertação de Mestrado | 2019 </h5>
+                <div class="row technologies">
+                    <div id="item" class="circle"></div>
+                    <span id="item">Android</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Wikitude JS API (Realidade Aumentada)</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Google Maps API</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Spring</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">SQLite</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Desenho Centrado no Utilizador</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Testes de Usabilidade</span>
 
-<body data-spy="scroll" data-target="#navbar-options">
+                </div>
 
-    <!-- START NAVIGATION -->
-    <nav class="navbar navbar-expand-lg" role="navigation">
-        <div class="container">
-            <a href="#" class="navbar-brand">Portfólio</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                <i class="material-icons">menu</i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav text-uppercase mr-auto">
-                    <li><a href="#home" class="nav-link">Início</a></li>
-                    <li><a href="#portfolio" class="nav-link">Projetos</a></li>
-                    <li><a href="#about" class="nav-link">Acerca</a></li>
-                    <li><a href="#contact" class="nav-link">Contactos</a></li>
-                </ul>
+                <div>
+                    <p>
+                        No âmbito da minha dissertação de mestrado, na qual colaborei com a Marinha Portuguesa, dei
+                        continuidade ao desenvolvimento do projeto exploratório THEMIS, um sistema holístico para
+                        auxílio aos agentes envolvidos na resposta a situações de catástrofe. O projeto THEMIS agrega
+                        vários módulos
+                        que comunicam entre si, sendo a aplicação móvel THEMIS um deles e o ponto central do meu
+                        trabalho.
+
+                        Um dos principais objetivos da aplicação móvel THEMIS é permitir que os agentes que operam no
+                        terreno em situações de emergência consigam comunicar ocorrências (perigos, vítimas,
+                        pontos de interesse) entre si de forma
+                        eficiente. Para tal, para além da página de pesquisa de ocorrências (Fig 1a) e da vista de
+                        mapa (Fig 1b), que permitem identificar e reportar
+                        novas ocorrências, recorreu-se a uma vista de realidade aumentada, que combina a imagem
+                        capturada pela câmara do dispositivo móvel
+                        com técnicas de realidade aumentada, de forma a surgirem como uma alternativa de visualização
+                        para os operacionais
+                        (Fig 1c).
+                    </p>
+                    <p>
+                        O foco do meu trabalho consistiu em reestruturar a interface gráfica, melhorar e adicionar novas
+                        funcionalidades ao protótipo
+                        pré-existente da aplicação, mas sobretudo desenvolver novas técnicas de realidade aumentada que
+                        permitissem
+                        otimizar a experiência de utilização da vista de realidade aumentada.
+
+                        As principais técnicas de realidade aumentada introduzidas consistem na implementação de 2
+                        algoritmos
+                        de agregação (clustering) para evitar a
+                        sobreposição de ocorrências
+                        dispostas na mesma direção (Fig 2), técnicas de filtragem de informação para realçar as
+                        ocorrências mais relevantes ,
+                        o uso de indicadores laterais para sinalizar ocorrências fora do campo de visão (Fig 3), e a
+                        marcação de ocorrências, para que o utilizador não a sua localização.
+                    </p>
+                    <p>
+                        Em termos técnicos esta aplicação permitiu-me adquirir fortes conhecimentos no desenvolvimento
+                        de aplicações móveis para Android, assim como na sua integração com a API do Google Maps e a API
+                        JS da
+                        Wikitude para a implementação das funcionalidades de realidade aumentada. Houve também
+                        oportunidade para trabalhar ao nível do backend,
+                        cuja implementação inicial recorreu ao framework Spring e a uma base de dados SQLite. Numa fase
+                        adiantada do trabalho, houve ainda tempo para iniciar a
+                        a comunicação com um servidor que permite a troca de dados com uma base de dados assentes no
+                        modelo <a> JC3IEDM </a>, num trabalho em conjunto com a Critical Software.
+                    </p>
+                    <p>
+                        Por outro lado, por se tratar de um trabalho exploratório sem um planeamento totalmente definido
+                        à partida,
+                        tive oportunidade de adquirir competências ao nível do levantamento e análise de requisitos e de
+                        protótipagem. Neste contexto,
+                        promoveu-se um processo de design centrado no utilizador, com um desenvolvimento da solução
+                        iterativa, assente em reuniões regulares com representantes da Marinha, e em testes de
+                        usabilidade periódicos com potenciais utilizadores da aplicação móvel THEMIS, acompanhados de
+                        questionários orais e escritos.
+                    </p>
+                    <p>
+                        Abaixo podem ser consultadas a dissertação de mestrado e o artigo publicado na EAI International
+                        Conference on Mobile and Ubiquitous Systems
+                        (Mobiquitous 2019).
+                    </p>
+
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-dark button"><a
+                            href="https://run.unl.pt/handle/10362/82179">Consultar
+                            Dissertação</a></button>
+                    <button type="button" class="btn btn-dark button"><a
+                            href="https://dl.acm.org/doi/10.1145/3360774.3360825">Consultar Artigo</a></button>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- END NAVIGATION -->
 
-    <!-- START HOME -->
-    <section id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-10">
-                    <h1 class="tm-home-title">Olá, sou o Alexandre Gil</h1>
-                    <h4 class="tm-home-subtitle">Mestre em Engenharia Informática desde 2019 </h4>
-                    <p>Experiência acumulada em ramos como a Engenharia de Software, Prototipagem, Desenvolvimento de
-                        Aplicações Móveis e Web,
-                        Projetos de Realidade Aumentada e de IoT, Tecnologias Microsoft. </p>
-                    <a href="#portfolio" class="btn btn-default smoothScroll tm-view-more-btn">Mais Sobre Mim</a>
+            <div class="content-img col-4">
+                <img src="images/themis_login.png" alt="portfolio img" height="600px">
+            </div>
+
+            <div class="col-xl-8 offset-xl-4 col-lg-12 slideshow-body">
+                <div class="slideshow-container">
+                    <a class="prev" onclick="plusSlides(-1, 'themis')">&#10094;</a>
+                    <div>
+                        <div class="mySlides mySlidesTHEMIS">
+                            <img class="slideshow-img-horizontal" src="images/themis_typesofview.png">
+                            <p class="slidetext">Fig 1: Página de pesquisa (a); Vista de Mapa (b);
+                                Vista de RA (c)</p>
+                        </div>
+
+                        <div class="mySlides mySlidesTHEMIS">
+                            <img class="slideshow-img-horizontal" src="images/themis_cluster.png">
+                            <p class="slidetext">Fig 2: Ocorrências agrupadas em cluster;
+                                Ocorrências após expandir o cluster
+                            </p>
+                        </div>
+
+                        <div class="mySlides mySlidesTHEMIS">
+                            <img class="slideshow-img-horizontal" src="images/themis_sidebars.png">
+                            <p class="slidetext">Fig 3: Vista de RA com Indicador lateral à
+                                direita</p>
+                        </div>
+                    </div>
+                    <a class="next" onclick="plusSlides(1, 'themis')">&#10095;</a>
+                </div>
+
+                <div class="dots-container">
+                    <span class="dot dotTHEMIS" onclick="currentSlide(1, 'themis')"></span>
+                    <span class="dot dotTHEMIS" onclick="currentSlide(2, 'themis')"></span>
+                    <span class="dot dotTHEMIS" onclick="currentSlide(3, 'themis')"></span>
                 </div>
             </div>
         </div>
+
     </section>
-    <!-- END HOME -->
 
-    <!-- start portfolio -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="wow bounce">Projetos em destaque</h1>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12">
-                    <div class="portfolio-thumb">
-                        <a href="portfolio_details.html #themis">
-                            <img src="images/themis_login.png" class="img-responsive" alt="portfolio img"
-                                height="500px">
-                            <div class="portfolio-overlay">
-                                <h3>Projeto THEMIS</h3>
-                                <h5>Dissertação de Mestrado | 2019</h5>
-                                <p>
-                                    Android
-                                    <br>Wikitude JS API (Realidade Aumentada)
-                                    <br>Google Maps API
-                                    <br>Spring
-                                    <br>SQLite
-                                    <br>Desenho Centrado no Utilizador
-                                    <br>Testes de Usabilidade
-                                </p>
-                            </div>
-                        </a>
+    <!------------------------------------------------------------------------->
+    <!-- -------------------------Kiss My Score ------------------------------->
+    <!------------------------------------------------------------------------->
 
-                    </div>
+    <section id="kms" class="dark">
+        <div class="row">
+            <div class="col-xl-8 col-lg-12 content">
+                <h3 class="border_title">Mobile App Kiss My Score</h3>
+                <h5 class=> Estágio Curricular Licenciatura | 2018 </h5>
+                <div class="row technologies">
+                    <div id="item" class="circle"></div>
+                    <span id="item">React-Native</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Meteor.js</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Node.js</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">MongoDB</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Growth Hacking</span>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12">
-                    <div class="portfolio-thumb">
-                        <a href="portfolio_details.html #kms">
-                            <img src="images/kms_leagues.png" class="img-responsive" alt="portfolio img" height="500px">
-                            <div class="portfolio-overlay">
-                                <h3>Mobile App Kiss My Score</h3>
-                                <h5>Estágio Curricular Licenciatura | 2018</h5>
-                                <p>
-                                    React-Native
-                                    <br>Meteor.js
-                                    <br>Node.js
-                                    <br>MongoDB
-                                    <br>Growth Hacking
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                <div>
+                    <p>
+                        O meu estágio curricular de conclusão da licenciatura decorreu na Build Up Labs, uma startup
+                        studio, que se caracteriza
+                        por estar constantemente a idealizar, criar e fazer crescer múltiplas startups em paralelo.
+
+                        A minha função neste estágio foi auxiliar no desenvolvimento de um novo produto, a aplicação
+                        móvel Kiss My Score, que acabara de
+                        passar num teste de validação de mercado na altura que antecedeu o meu estágio.
+
+                        O principal objetivo da aplicação era proporcionar uma experiência social aos fãs de
+                        futebol, permitindo-lhes interagir e competir na previsão de resultados de jogos de futebol.
+
+                        O elemento fundamental da planificação da aplicação consistia na existências de ligas, criadas
+                        pelo sistema e públicas,
+                        ou criadas pelos utilizadores de forma privada e partilhadas com outros utilizadores através de
+                        convites, que estariam associadas
+                        a determinadas competições futebolísticas e cujo resultado dos jogos poderia ser alvo de
+                        palpites por parte dos utilizadores registados na liga.
+
+                        As ligas teriam um sistema de classificação assente em pontos, atribuídos aos utilizadores
+                        consoante a precisão dos seus palpites em cada um dos jogos.
+
+                        Para além das apostas em jogos, seria possível acompanhar os seus lances-chave em tempo real.
+                    </p>
+                    <p>
+                        O estágio na Build Up Labs foi a minha primeira experiência profissional e permitiu-me evoluir
+                        bastante tanto
+                        a nível técnico como de soft-skills.
+
+                        Durante o decorrer do estágio estive envolvido no desenvolvimento do backend e do frontend da
+                        aplicação, e foram utilizadas
+                        tecnologias como o React-Native, Node.js ou base de dados MongoDB, recorrendo à plataforma
+                        Meteor.js. Houve também a utilização de diversas
+                        bibliotecas para React-native, assim como a comunicação com APIs externas para obter informações
+                        sobre os jogos de futebol.
+                    </p>
+                    <p>
+                        O processo de desenvolvimento assentou sobre uma metodologia flexível, com constantes validações
+                        por parte dos utilizadores,
+                        que inicialmente começaram por ser membros do grupo em que a empresa se encontra inserida
+                        (versão alpha) e posteriormente, quando a aplicação
+                        foi publicada na play store, por utilizadores que descarregaram a aplicação na versão beta.
+                    </p>
+                    <p>
+                        O contacto próximo com todos os elementos do projeto nas suas mais diversas áreas permitiu-me
+                        acompanhar de perto
+                        todo o processo edificação e divulgação do produto. Ferramentas como o Trello, Slack, Git,
+                        InVision fizeram parte do meu dia a dia no estágio. A presença na equipa de desenvolvimento de
+                        um developer experiente também foi
+                        um fator importante para que a aprendizagem fosse mais rápida.
+                    </p>
+                    <p>
+                        Após o término do estágio a aplicação Kiss My Score continuou a crescer e conta hoje com uma
+                        sólida base de utilizadores que utiliza a aplicação diariamente.
+                    </p>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12">
-                    <div class="portfolio-thumb">
-                        <a href="portfolio_details.html #autoplant">
-                            <img src="images/autoplant_home.png" class="img-responsive" alt="portfolio img"
-                                height="500px">
-                            <div class="portfolio-overlay">
-                                <h3>Projeto Autoplant</h3>
-                                <h5>Projeto de SCMU (Cadeira de Mestrado) | 2018</h5>
-                                <p>
-                                    Computação Móvel e Ubíqua
-                                    <br>Android
-                                    <br>Arduino
-                                    <br>Wifi ESP8266
-                                    <br>Java
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                <div>
+                    <button type="button" class="btn btn-dark button"><a href="https://kissmyscore.com"> Aceder ao site
+                            da
+                            App </a></button>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12">
-                    <div class="portfolio-thumb">
-                        <a href="portfolio_details.html #whatsapp">
-                            <img src="images/whatsapp_contactos.png" class="img-responsive" alt="portfolio img"
-                                height="500px">
-                            <div class="portfolio-overlay">
-                                <h3>Whatsapp Clone</h3>
-                                <h5>React-Native Udemy Online Course - Final Project | 2021</h5>
-                                <p>
-                                    React-Native
-                                    <br>Redux
-                                    <br>Firebase
-                                    <br>HTTP Axios
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12">
-                    <div class="portfolio-thumb">
-                        <a href="portfolio_details.html #mycollab">
-                            <img src="images/collab_myportal2.png" class="img-responsive" alt="portfolio img"
-                                height="350px">
-                            <div class="portfolio-overlay">
-                                <h3>MyPortal WebApp</h3>
-                                <h5>Projeto na Collab | 2020-2021</h5>
-                                <p> 
-                                    Angular
-                                    <br>.Net Core
-                                    <br> C#
-                                    <br> Sql Server
-                                    <br> Microsoft Azure
-                                    <br> Microsoft Power Apps
-                                    <br> Microsoft Power Automate 
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-xs-12">
-                    <div class="portfolio-thumb">
-                        <img src="images/collab_d365sales2.png" class="img-responsive" alt="portfolio img"
-                            height="350px">
-                        <div class="portfolio-overlay">
-                            <h3>Collab Sales D365</h3>
-                            <h5>Projeto na Collab | 2020-2021 </h5>
-                            <p>
-                                 Microsoft Azure
-                                <br> Microsoft PowerApps
-                                <br> Microsoft PowerAutomate
-                                <br> Javascript 
+            </div>
+
+            <div class="content-img col-lg-4">
+                <img src="images/kms_leagues.png" alt="portfolio img" height="600px">
+            </div>
+            <div class="col-xl-8 offset-xl-4 col-lg-12 slideshow-body">
+                <div class="slideshow-container">
+                    <a class="prev" onclick="plusSlides(-1, 'kms')">&#10094;</a>
+                    <div>
+                        <div class="mySlides mySlidesKMS">
+                            <img class="slideshow-img-vertical" src="images/kms_games.png">
+                            <p class="slidetext">Fig 4: Vista dos jogos com palpites a decorrer
+                                RA</p>
+                        </div>
+                        <div class="mySlides mySlidesKMS">
+                            <img class="slideshow-img-vertical" src="images/kms_gamesbet.png">
+                            <p class="slidetext">Fig 5: Vista com criação de palpite
+                            </p>
+                        </div>
+                        <div class="mySlides mySlidesKMS">
+                            <img class="slideshow-img-vertical" src="images/kms_detailsgame.png">
+                            <p class="slidetext">Fig 6: Vista com detalhes de jogo </p>
+                        </div>
+                        <div class="mySlides mySlidesKMS">
+                            <img class="slideshow-img-vertical" src="images/kms_rankingsemanal.png">
+                            <p class="slidetext">Fig 7: Vista com ranking numa liga </p>
+                        </div>
+                        <div class="mySlides mySlidesKMS">
+                            <img class="slideshow-img-vertical" src="images/kms_leagues2.png">
+                            <p class="slidetext">Fig 8: Vista das ligas privadas de um utilizador
                             </p>
                         </div>
                     </div>
+
+                    <a class="next" onclick="plusSlides(1,'kms')">&#10095;</a>
                 </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12">
-                    <h4>...e muitos mais
-                        me esperam.</h4>
+
+                <div class="dots-container">
+                    <span class="dot dotKMS" onclick="currentSlide(1, 'kms')"></span>
+                    <span class="dot dotKMS" onclick="currentSlide(2,'kms')"></span>
+                    <span class="dot dotKMS" onclick="currentSlide(3, 'kms')"></span>
+                    <span class="dot dotKMS" onclick="currentSlide(4, 'kms')"></span>
+                    <span class="dot dotKMS" onclick="currentSlide(5, 'kms')"></span>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end portfolio -->
 
-    <!-- START ABOUT -->
-    <section id="about" class="tm-about">
-        <div class="container">
-            <div class="row">
-                <div class=" offset-5 col-6" style="justify-content: center;">
-                    <h1>Pensamentos que me inspiram</h1>
+    <!------------------------------------------------------------------------->
+    <!-- -------------------------AutoPlant ----------------------------------->
+    <!------------------------------------------------------------------------->
+
+    <section id="autoplant" class="darker">
+        <div class="row">
+            <div class="col-xl-8 col-lg-12 content">
+                <h3 class="border_title">Projeto Autoplant</h3>
+                <h5 class=> Projeto de SCMU (Cadeira de Mestrado) | 2018 </h5>
+                <div class="row technologies">
+                    <div id="item" class="circle"></div>
+                    <span id="item">Computação Móvel e Ubíqua</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Android</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Arduino</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Wifi ESP8266</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Java</span>
+                </div>
+                <div>
+                    <p>
+                        O projeto de grupo da cadeira de sistemas de computação móvel e ubíqua (SCMU) consistiu na
+                        criação de um sistema que permitisse a monitorização dos valores de temperatura e humidade de um
+                        local, medidos a partir de
+                        sensores, assim como o desencadeamento de uma ação de rega, de forma automática, com base num
+                        horário, ou manual, a partir de um
+                        smartphone.
+                    </p>
+                    <p>
+                        O sistema implementado foi concebido para permitir a interação entre utilizadores e
+                        módulos de rega que fossem previamente configurados para serem interpretados pelo sistema, sendo
+                        que cada utilizador poderia estar associado a um ou mais módulos de rega, e
+                        cada módulo de rega poderia ser gerido por um ou mais utilizadores.
+
+                        Os testes realizados tinham na sua composição um módulo de rega, que tinha na sua base numa
+                        placa arduino, à qual se ligou um atuador, neste caso o led, uma placa Wifi Esp. 8266 e
+                        3 sensores: um sensor de temperatura do ambiente (thermistor), um sensor de humidade do solo
+                        (soilMoisture), e um sensor de humidade (waterSensor).
+                    </p>
+                    <p>
+                        Para permitir que os utilizadores interagissem com o módulo de rega, foi desenvolvida uma
+                        aplicação móvel para android, composta, entre outras funcionalidades, por um sistema
+                        de autenticação, uma página para consulta dos módulos de rega associados ao utilizador (Fig 9),
+                        uma página para associação de um novo sistema de rega ao utilizador (Fig 10),
+                        uma página com os detalhes relativos ao módulo de rega em observação, com opção para acionar a
+                        rega manualmente ou adicionar novos utilizadores ao módulo (Fig 11).
+
+                        Para efeitos de teste, a instrução para acionar a rega consistiu em acender um led de presença
+                        no módulo de rega a informar que
+                        a ação de rega se encontrava a decorrer.
+                    </p>
+                    <p>
+                        Para que a interação entre utilizador e módulo de rega pudesse acontecer, o sistema contava com
+                        um servidor,
+                        desenvolvido a partir de frameworks assentes em Java, que para além de armazenar as informações
+                        do sistema, tinha como função
+                        intermediar a comunicação entre o cliente (aplicação móvel) e o microcontrolador Wifi Esp. 8266
+                        presente no módulo de rega.
+
+                        A comunicação entre o servidor e a aplicação móvel relizou-se através do uso de um Websocket,
+                        que permitia à aplicação
+                        manter-se conectada com o servidor e proceder à troca de informações sempre que necessário, e
+                        receber atualizações
+                        dos dados do sensor sem necessitar de iniciar uma nova conexão.
+
+                        Por sua vez, o microcontrolador Esp. 8266 assegurava a comunicação com o servidor através de
+                        pedidos
+                        HTTP, que ocorriam periodicamente, nos quais eram enviadas as informações dos sensores que a
+                        placa arduino lhe ia transmitindo.
+                        Na resposta a esses pedidos HTTP o servidor aproveitava para informar o módulo de rega se a ação
+                        de rega deveria estar ativa ou não.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-img col-4">
+                <img src="images/autoplant_login.png" alt="portfolio img" height="600px">
+            </div>
+
+            <div class="col-xl-8 offset-xl-4 col-lg-12 slideshow-body">
+                <div class="slideshow-container">
+                    <a class="prev" onclick="plusSlides(-1, 'autoplant')">&#10094;</a>
                     <div>
-                        <h4 class="rotate">
-                            "Não existe um caminho para a felicidade. A felicidade é o caminho." <br> Mahatma Gandhi;
-                            "Deixe o mundo um pouco melhor do que encontrou." <br> Robert Baden-Powell;
-                            “O futuro pertence àqueles que acreditam na beleza de seus sonhos.” <br> Eleanor Roosevelt;
-                            “O sucesso consiste em ir de fracasso em fracasso sem perder o entusiasmo.”<br> Winston
-                            Churchill;
-                            "A única constante é a mudança."<br> Heráclito de Efeso;
-                            “Se quer ir rápido vá sozinho, se quer ir longe, vá em grupo.” <br> Provérbio Africano
-                        </h4>
+                        <div class="mySlides mySlidesAutoPlant">
+                            <img class="slideshow-img-vertical" src="images/autoplant_home.png">
+                            <p class="slidetext">Fig 9: Homepage da App Autoplant</p>
+                        </div>
+                        <div class="mySlides mySlidesAutoPlant">
 
-                        <p class="rotate" style="color:#fff">
-                            Para alcançarmos a felicidade é fundamental desfrutarmos daquilo que fazemos e não apenas
-                            daquilo que sonhamos fazer.;
-
-                            Nada melhor do que tomarmos ações que
-                            procuram solucionar problemas do mundo atual, melhorando-o, simplificando-o e tornando-o
-                            acessível a todos.;
-
-                            Para conseguirmos tornar o mundo num lugar melhor, é preciso imaginar, inovar e acreditar
-                            genuínamente que é possível concretizar.;
-
-                            Para concretizar aquilo a que nos propomos teremos de falhar muitas vezes. Não temos de ter
-                            medo
-                            do erro, é com ele que mais aprendemos.;
-
-                            Não existem obras terminadas. O mundo está em constante mudança e todos os dias surgem novos
-                            desafios
-                            e oportunidades. Amanhã é apenas outro dia.;
-
-                            Os melhores resultados alcançam-se através do trabalho em equipa e da união dos esforços. O
-                            conjunto prevalece sempre sobre a soma das individualidades.
-                        </p>
+                            <img class="slideshow-img-vertical" src="images/autoplant_newvase.png">
+                            <p class="slidetext">Fig 10: Vista para configuração de um novo
+                                módulo de rega (vaso)
+                            </p>
+                        </div>
+                        <div class="mySlides mySlidesAutoPlant">
+                            <img class="slideshow-img-vertical" src="images/autoplant_vasedetails.png">
+                            <p class="slidetext">Fig 11: Vista com detalhes do módulo de rega (vaso)</p>
+                        </div>
+                        <div class="mySlides mySlidesAutoPlant">
+                            <img class="slideshow-img-horizontal" src="images/autoplant_arduino.png">
+                            <p class="slidetext">Fig 12: Módulo de rega com Arduino, sensores, atuadores e
+                                microcontrolador Esp. 8266</p>
+                        </div>
                     </div>
+
+                    <a class="next" onclick="plusSlides(1,'autoplant')">&#10095;</a>
+                </div>
+
+                <div class="dots-container">
+                    <span class="dot dotAutoPlant" onclick="currentSlide(1, 'autoplant')"></span>
+                    <span class="dot dotAutoPlant" onclick="currentSlide(2, 'autoplant')"></span>
+                    <span class="dot dotAutoPlant" onclick="currentSlide(3, 'autoplant')"></span>
+                    <span class="dot dotAutoPlant" onclick="currentSlide(4, 'autoplant')"></span>
                 </div>
             </div>
         </div>
     </section>
-    <!-- END ABOUT -->
 
+    <!------------------------------------------------------------------------->
+    <!---------------------------- Whatsapp Clone ----------------------------->
+    <!------------------------------------------------------------------------->
 
-    <footer id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-5" style="align-items: flex-start; display: flex; flex-direction: column;">
-                   
+    <section id="whatsapp" class="dark">
+        <div class="row">
+            <div class="col-xl-8 col-lg-12 content">
+                <h3 class="border_title">WhatsApp Clone</h3>
+                <h5 class=> React-Native Udemy Online Course - Final Project | 2021 </h5>
 
-                            <p class="contact-title">CONTACTOS</p>
-                    <p><i class="fa fa-phone"></i> +351961693771</p>
-                    <p><i class="fa fa-envelope"></i> gilcampos8@gmail.com</p>
-                    <p><a href="http://linkedin.com/in/alexandre-gil-campos-399a4a131"><i
-                                class="fa fa-linkedin-square"></i> linkedin.com/in/alexandre-gil-campos-399a4a131 </a> </p>
+                <div class="row technologies">
+                    <div id="item" class="circle"></div>
+                    <span id="item">React-Native</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Redux</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Firebase</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">HTTP Axios</span>
+                </div>
+                <div>
+                    <p>
+                        A realização do curso da Udemy "Desenvolvedor Multiplataforma Android/IOS com React e Redux"
+                        permitiu-me melhorar as minhas
+                        capacidades ao nível da programação Multiplataforma com React-Native.
+
+                        Ao longo do curso desenvolvi diversas aplicações de treino que se focaram em distintos aspetos,
+                        entre eles a renderização de elementos, manuseamento de Props e States, navegação entre páginas,
+                        pedidos HTTP com o Axios, integração com o Firebase,
+                        Redux, assim como a utilização de outras bibliotecas externas.
+                    </p>
+                    <p>
+                        O Projeto final consistiu na criação de uma simplificada cópia do Whatsapp, com as
+                        funcionalidades de registo e autenticação
+                        do utilizador, visualização dos contactos (Fig: 13) e das conversas iniciadas com outros
+                        utilizadores, adição de novo contacto à lista de contactos e chat para troca de mensagens entre
+                        utilizadores (Fig: 14).
+                        Para manusear os estados da aplicação, recorreu-se à utilização do Redux. Por outro lado, as
+                        informações foram persistidas no Firebase
+                        com recurso à sua biblioteca para React-Native, que permite, não só adicionar e modificar novas
+                        entradas na base de dados, como também a configuração de Listeners
+                        que ficam a escutar alterações efetuadas na base de dados e possibilitam que as alterações na
+                        base de dados sejam atualizadas na aplicação em tempo real.
+
+                    </p>
+                    <p>
+                        Para além da execução dos passos do curso para a criação do clone do Whatsapp, adicionei mais
+                        uma funcionalidade à aplicação para consolidar
+                        os meus conhecimentos sem recorrer aos ensinamentos do curso. A funcionalidade consistiu na
+                        possibilidade de adicionar novos contactos, não só
+                        digitando o contacto do utilizador, mas também a partir da leitura de um código QRCode. Para
+                        desenvolver esta funcionalidade foi necessário importar 2 bibliotecas,
+                        uma para para geração de QRCodes, outra para leitura de QRCodes a partir da câmara do
+                        smartphone.
+
+                        Desta forma, cada utilizador tem o seu próprio QRCode que é
+                        gerado pela app com base no seu email. Este QRCode pode ser exibido a outros utilizadores que,
+                        por sua vez, através da opção de leitura de QRCodes presente na APP,
+                        adicionar utilizador à sua rede de contactos através da leitura do QRCode. O GIF da figura 15
+                        demonstra o comportamento da aplicação na leitura de QRCodes para adição
+                        de um novo
+                        contacto.
+                    </p>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-dark button"><a href="https://kissmyscore.com"> Aceder ao Curso
+                            Online
+                        </a></button>
+                    <button type="button" class="btn btn-dark button"><a
+                            href="images/UC-AlexandreCampos_reactnative.pdf"> Certificado de Conclusão
+                        </a></button>
+                </div>
+            </div>
+
+            <div class="content-img col-4">
+                <img src="images/whatsapp_authentication.png" alt="portfolio img" height="600px">
+            </div>
+
+            <div class="col-xl-8 offset-xl-4 col-lg-12 slideshow-body">
+                <div class="slideshow-container">
+                    <a class="prev" onclick="plusSlides(-1, 'whatsapp')">&#10094;</a>
+                    <div>
+                        <div class="mySlides mySlidesWhatsapp">
+                            <img class="slideshow-img-vertical" src="images/whatsapp_contactos.png">
+                            <p class="slidetext">Fig 13: Tab com contactos do utilizador.
+                            </p>
+                        </div>
+                        <div class="mySlides mySlidesWhatsapp">
+                            <img class="slideshow-img-vertical" src="images/whatsapp_chat.png">
+                            <p class="slidetext">Fig 14: Vista com troca de mensagens entre utilizadores.
+                            </p>
+                        </div>
+                        <div class="mySlides mySlidesWhatsapp">
+                            <img class="slideshow-img-vertical" src="images/whatsapp_qrcode_demo.gif">
+                            <p class="slidetext">Fig 15: Demonstração de adição de contacto através
+                                da leitura de QRCode.</p>
+                        </div>
+                    </div>
+
+                    <a class="next" onclick="plusSlides(1,'whatsapp')">&#10095;</a>
                 </div>
 
-
-                <div class="col-7" style="align-items: flex-start; display: flex; flex-direction: column;">
-                    <p class="contact-title">+ INFOS</p>
-                    <p><a href="images/certidao_mestrado.pdf">
-                            <i class="fa fa-graduation-cap"></i>Certidão de Mestrado </a> </p>
-                    <p><a href="images/alexandrecampos_CV_2021_PT.pdf">
-                            <i class="fa fa-address-card"></i> CV </a> </p>
+                <div class="dots-container">
+                    <span class="dot dotWhatsapp" onclick="currentSlide(1, 'whatsapp')"></span>
+                    <span class="dot dotWhatsapp" onclick="currentSlide(2, 'whatsapp')"></span>
+                    <span class="dot dotWhatsapp" onclick="currentSlide(3, 'whatsapp')"></span>
                 </div>
             </div>
         </div>
+    </section>
 
+
+    <!------------------------------------------------------------------------->
+    <!-- -------------------------Collab MyCollab ------------------------------>
+    <!------------------------------------------------------------------------->
+
+    <section id="mycollab" class="light">
+        <div class="row">
+            <div class="col-xl-8 col-lg-12 content">
+                <h3 class="border_title">MyPortal WebApp</h3>
+                <h5 class=> Projeto na Collab | 2020-2021 </h5>
+
+                <div class="container row technologies">
+                    <div id="item" class="circle"></div>
+                    <span id="item">Angular</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">.Net Core</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">C#</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Sql Server</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Microsoft Azure </span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Microsoft Power Apps</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Microsoft Power Automate</span>
+                </div>
+                <div>
+                    <p>
+                        Durante a minha passagem pela Collab pertenci à equipa responsável por desenvolver software
+                        essencialmente para consumo interno.
+
+                        Um dos projetos mais desafiantes que a equipa enfrentou durante a minha passagem pela empresa, 
+                        consistiu na criação de uma aplicação web de raiz que fornecesse aos colaboradores da empresa a 
+                        possibilidade de gerirem as suas informações pessoais, tais como os seus benefícios, 
+                        de submeterem despesas pessoais para reembolso ou de consultarem os equipamentos que lhes estavam atribuídos.
+
+                        A necessidade de criação da aplicação web deveu-se à mudança do grupo detentor da empresa, que
+                        fez com que os direitos de utilização da plataforma disponibilizada até então deixassem de existir.
+
+                        O processo de desenvolvimento da nova plataforma iniciou-se com um levantamento e análise de
+                        requisitos. Devido à urgência em ter o produto diponível num curto espaço de tempo, o maior 
+                        desafio nesta fase consistiu em chegar a uma proposta que simplificasse ao máximo os comportamentos da
+                        aplicação, assim como, que contasse com tecnologias que permitissem agilizar ao máximo o
+                        processo.
+
+                        Após a definição dos requisitos, da estrutura do projeto e das tecnologias a serem utilizadas a
+                        execução do projeto foi planeada através de um Gantt Chart.
+                    </p>
+                    <p>
+                        O processo de desenvolvimento da nova plataforma iniciou-se com um levantamento e análise de
+                        requisitos. Devido à urgência em ter o produto diponível num curto espaço de tempo, 
+                        o maior desafio nesta fase  consistiu em chegar a uma proposta que simplificasse ao máximo os 
+                        comportamentos da aplicação, assim como, que contasse com tecnologias que permitissem agilizar 
+                        ao máximo o processo.
+
+                        Após a definição dos requisitos, da estrutura do projeto e das tecnologias a serem utilizadas a
+                        execução do projeto foi planeada através de um software que permite a criação de Gantt Charts.
+                    </p>
+
+                    <p>
+                        A solução edificada contou com uma aplicação Web, 
+                        desenvolvida recorrendo a Angular para o frontend e .Net (C#) e Sql Server para o backend.
+                        Para além disso, da solução edificada fizeram parte um portal para o backoffice recorrendo 
+                        a Microsoft Power Apps, assim como um mecânismo para aprovação hierarquica de despesas 
+                        com recurso a tecnologias do Microsoft Power Automate.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-img col-4">
+                <img src="images/collab_myportal2.png" alt="portfolio img" height="375px">
+            </div>
         </div>
-    </footer>
+    </section>
+
+
+    <!------------------------------------------------------------------------->
+    <!-- -------------------------Collab CollabSales ------------------------------>
+    <!------------------------------------------------------------------------->
+
+    <section id="mycollab" class="light">
+        <div class="row">
+            <div class="col-xl-8 col-lg-12 content">
+                <h3 class="border_title">Collab Sales D365</h3>
+                <h5 class=> Projeto na Collab | 2020-2021 </h5>
+
+                <div class="container row technologies">
+                    <div id="item" class="circle"></div>
+                    <span id="item">Microsoft Azure </span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Microsoft PowerApps</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Microsoft PowerAutomate</span>
+                    <div id="item" class="circle"></div>
+                    <span id="item">Javascript</span>
+                </div>
+                <div>
+                    <p>
+                        O trabalho desenvolvido na Collab também contou com o desenvolvimento de novas ferramentas 
+                        CRM a partir do Microsoft Dynamics 365. 
+                    </p>
+                    <p>
+                        Um dos principais projetos desenvolvidos no Dynamics 365 consistiu na reestruturação e desenvolvimento de uma 
+                        nova aplicação para a equipa de vendas gerir as suas oportunidades. 
+                        
+                        Entre outras funcionalidades, a nova solução contou com a adição de um processo de aprovação de oportunidades 
+                        antes do seu fecho. Este processo envolveu, numa primeira fase, a criação de
+                        módulos em Javascript do lado da aplicação CRM e de uma API externa em .NET.
+           
+                        Numa segunda fase, o comportamento de aprovação de oportunidades recorreu a 
+                        um mecânismo de aprovação genérico em Power Automate, concebido pelo manager da equipa.
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-img col-4">
+                <img src="images/collab_d365sales2.png" alt="portfolio img" height="375px">
+            </div>
+        </div>
+    </section>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -276,17 +657,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/af9471b335.js"></script>
-    <!-- text rotater -->
-    <script src="js/jquery.simple-text-rotator.js"></script>
-    <script>
-        $(".rotate").textrotator({
-            animation: "spin", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-            separator: ";", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-            speed: 10000 // How many milliseconds until the next word show.
-        });
-    </script>
-
+    <script src="js/custom.js"></script>
 
 </body>
 
