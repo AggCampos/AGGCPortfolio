@@ -1,0 +1,220 @@
+
+/* start overall structure */
+.body{
+  background-color: #fff;
+  color: #000;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+section {
+  padding: 6.5rem;
+}
+
+h3,p {
+  color: #000;
+  font-weight: 400;
+  text-align: justify;
+}
+
+h5 {
+  color: #757575;
+  font-weight: 400;
+}
+
+.border_title {
+  border-bottom: #dddddd solid 1px;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+}
+/* end overall structure */
+
+/* start sections styling */
+section.light{
+  border-bottom: #dddddd solid 1px;
+  overflow: hidden;
+  border-top: #ffffff solid 1px;
+}
+
+section.dark{
+  background: #fafafa;
+  border-bottom: #dddddd solid 1px;
+  box-shadow: inset 0px 1px 4px 0px rgb(0 0 0 / 10%);
+}
+
+section.darker{
+  background: #f3f3f3;
+  border-bottom: #dddddd solid 1px;
+  box-shadow: inset 0px 1px 4px 0px rgb(0 0 0 / 10%);
+}
+/* end sections styling */
+
+/* start technologies content */
+.technologies {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  margin: 0
+}
+
+.content-img {
+  padding: 2rem; 
+  display:flex; 
+  justify-content: center; 
+  align-content: center; 
+  margin: auto;
+}
+
+.circle {
+    width: .5em;
+    height: .5em;
+    align-self: center;
+    border-radius: 50%;
+    background-color: #eb5424;
+}
+
+#item{
+    margin-right: 10px
+}
+/* finish technologies content */
+
+/* start buttons styling*/
+button a {
+    text-decoration: none; 
+    color: #fff;
+}
+
+button a:hover {
+    text-decoration: none; 
+    color: #fff;
+}
+
+.button {
+    color: #fff;
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+    margin-top: 0.5rem;
+}
+/* end buttons styling*/
+
+
+/* start slideshow styling*/
+.slideshow-body {
+   margin: 0;
+   padding: 0;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3rem; 
+  padding-bottom: 1.5rem; 
+  flex-direction: row; 
+}
+
+.mySlides {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  width: 40rem; 
+}
+
+.slideshow-img-horizontal {
+  width: 40rem; 
+  align-self: center
+}
+
+.slideshow-img-vertical {
+  width: 15rem;
+  align-self: center
+}
+
+.prev, .next {
+  margin: 2rem;
+  padding: 16px;
+  color: #757575;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+.next {
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #757575;
+  text-decoration: none;
+  color: #eb5424;
+}
+
+.slidetext {
+  color: #757575;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+
+  background-color: khaki;
+}
+
+.dots-container{
+  text-align:center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #757575;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #eb5424;
+}
+/* end slideshow styling*/
+
+
+/* START MEDIA */
+@media screen and (max-width:980px){
+
+  section {
+    padding: 2rem;
+  }
+
+  .mySlides, .slideshow-img-horizontal {
+    width: 32rem;
+  }
+
+}
+
+@media screen and (max-width:700px){
+  .mySlides, .slideshow-img-horizontal {
+    width: 20rem;
+  }
+}
+
+
+
+
