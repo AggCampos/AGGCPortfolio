@@ -217,7 +217,7 @@ button a:hover {
     padding: 2rem;
   }
 
-  .main_img {
+  .main_img, .prev, .next {
     display:none;
   }
 }
