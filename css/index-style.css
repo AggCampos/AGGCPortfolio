@@ -65,7 +65,6 @@ body
     background-image:url('../images/home_1_xl.jpg');
     background-size: cover;
     height: 50rem;
-    text-align: start;
     background-color: rgba(0,0,0,0.5);
     background-blend-mode:darken;
     text-align: justify;
