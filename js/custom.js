@@ -46,9 +46,9 @@ function currentSlide(n, name) {
       slideIndexAutoPlant = showSlides(slideIndexAutoPlant = n, document.getElementsByClassName("mySlidesAutoPlant"), document.getElementsByClassName("dotAutoPlant"));
       break;
 
-      case "whatsapp":
-        slideIndexWhatsapp = showSlides(slideIndexWhatsapp = n, document.getElementsByClassName("slideIndexWhatsapp"), document.getElementsByClassName("dotWhatsapp"));
-        break;
+    case "whatsapp":
+      slideIndexWhatsapp = showSlides(slideIndexWhatsapp = n, document.getElementsByClassName("mySlidesWhatsapp"), document.getElementsByClassName("dotWhatsapp"));
+      break;
   }
 }
 
