@@ -213,6 +213,13 @@ button a:hover {
   .mySlides, .slideshow-img-horizontal {
     width: 20rem;
   }
+  section {
+    padding: 2rem;
+  }
+
+  .main_img {
+    display:none;
+  }
 }
 
 
