@@ -228,6 +228,10 @@ footer .contact-title {
     font-weight: bold;
     color: #000;
 }
+
+footer p {
+    text-align: left;
+}
 /* end footer */
   
 /* START MEDIA */
