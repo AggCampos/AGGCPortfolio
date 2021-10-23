@@ -239,8 +239,6 @@ footer p {
     {
         background-image:url('../images/home_1_lg.jpg');
         background-size: cover;
-        padding-top: 12rem;
-        padding-bottom: 12rem;
         text-align: center;
     }
 
@@ -251,8 +249,6 @@ footer p {
 	{
         background-image:url('../images/home_1_md.jpg');
         background-size: cover;
-        padding-top: 12rem;
-        padding-bottom: 12rem;
         text-align: center;
 	}
   }
@@ -262,11 +258,10 @@ footer p {
 	{
         background-image:url('../images/home_1_s.jpg');
         background-size: cover;
-        padding-top: 12rem;
-        padding-bottom: 12rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         text-align: center;
 	}
-
   }
   /* END MEDIA */
 
