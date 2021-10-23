@@ -9,7 +9,7 @@
 }
 
 section {
-  padding: 6.5rem;
+  padding: 6rem;
 }
 
 h3,p {
@@ -200,7 +200,7 @@ button a:hover {
 @media screen and (max-width:980px){
 
   section {
-    padding: 2rem;
+    padding: 4rem;
   }
 
   .mySlides, .slideshow-img-horizontal {
